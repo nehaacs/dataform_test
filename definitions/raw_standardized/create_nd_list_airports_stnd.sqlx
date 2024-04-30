@@ -1,0 +1,23 @@
+config {
+    type: "table",
+    database: `${constants.cdf_data_extraction}`,
+    schema: "neha_dataform",
+    name: "list_airports_stnd",
+    tags: ['list_airports_stnd'],
+    description: docs.nd_list_airports_config.description,
+}
+
+js {
+    const table_schema = docs.nd_list_airports_config.schema
+}
+
+WITH
+  list_airports_stnd AS (
+  SELECT
+    ${helpers.to_bq(table_schema)}
+  FROM
+    `cdf-data-extraction.neha_dataform.list_airports` )
+SELECT
+  ${helpers.to_bq(table_schema)}
+FROM
+  list_airports_stnd ORDER BY ID

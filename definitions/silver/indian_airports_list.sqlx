@@ -1,0 +1,10 @@
+config {
+    type: "table",
+    database: `${constants.cdf_data_extraction}`,
+    schema: "neha_dataform",
+    name: "indian_airports_list",
+    tags: ['indian airports']
+}
+
+SELECT ID, Name as Airport_Name, City, Country, Lat as Latitude, Long as Longitude from ${ref("list_airports_stnd")}
+where Country="India"
