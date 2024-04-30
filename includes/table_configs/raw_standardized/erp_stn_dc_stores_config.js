@@ -54,15 +54,18 @@ const schema=[
     "data_type": "STRING",
     "description": "Warehouse Assignment to the DC"
   }
-]
-
-const table_description="List of Airports";
-const table_name="list_airports";
-const table_full_name=`cdf-data-extraction.neha_dataform.list_airports_stnd`;
+];
+const constants=require("includes/constants.js");
+const table_description="DC and Stores Data";
+const table_type="table";
+const table_name="dc_stores";
+const table_stnd_name="dc_stores_stnd";
+const table_full_name=`${constants.cdf_data_extraction}.neha_dataform.dc_stores_stnd`;
+const dataset="neha_dataform";
 
 const clustering_columns=[];
 
-module.exports={schema,table_description,table_name,table_full_name,clustering_columns};
+module.exports={schema,table_description, table_type, table_name,table_stnd_name,table_full_name,clustering_columns,dataset};
 
 
 
