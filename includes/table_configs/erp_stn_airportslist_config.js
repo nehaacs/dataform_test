@@ -1,55 +1,60 @@
 const schema=[
-    {
-      "column_name": "ID",
-      "data_type": "INTEGER",
-      "description": "Unique Identifier",
-    },
-    {
-      "column_name": "Name",
-      "data_type": "STRING",
-      "description": "Airport Name",
-    },
-    {
-      "column_name": "Iata",
-      "data_type": "STRING",
-      "description": "Airport Code",
-    },
-    {
-      "column_name": "Icao",
-      "data_type": "STRING",
-      "description": "Row Code",
-    },
-    {
-      "column_name": "Country",
-      "data_type": "STRING",
-      "description": "Country Name",
-    },
-    {
-      "column_name": "City",
-      "data_type": "STRING",
-      "description": "City Name",
-    },
-    {
-      "column_name": "Lat",
-      "data_type": "FLOAT",
-      "description": "Latitutde",
-    },
-    {
-      "column_name": "Long",
-      "data_type": "FLOAT",
-      "description": "Longitude",
-    },
-    {
-      "column_name": "Altitude",
-      "data_type": "INTEGER",
-      "description": "Altitude (in meters)",
-    },
-    {
-      "column_name": "Size",
-      "data_type": "INTEGER",
-      "description": "Area (in meter square)",
-    }
-  ]
+  {
+    "column_name": "Facility_ID",
+    "data_type": "INTEGER",
+    "description": "ID of the Facility"
+  },
+  {
+    "column_name": "Facility_Name",
+    "data_type": "STRING",
+    "description": "Name of the Facility"
+  },
+  {
+    "column_name": "Facility_Type",
+    "data_type": "STRING",
+    "description": "Type of Facility- DC or Store"
+  },
+  {
+    "column_name": "Address",
+    "data_type": "STRING",
+    "description": "Address of the Facility"
+  },
+  {
+    "column_name": "City",
+    "data_type": "STRING",
+    "description": "Facility Location- City"
+  },
+  {
+    "column_name": "State",
+    "data_type": "STRING",
+    "description": "Facility Location- State"
+  },
+  {
+    "column_name": "Zip",
+    "data_type": "INTEGER",
+    "description": "Facility Location- Zip Code"
+  },
+  {
+    "column_name": "Phone_",
+    "data_type": "STRING",
+    "description": "Phone Number"
+  },
+  {
+    "column_name": "Advertising_Market",
+    "data_type": "STRING",
+    "description": "Advertising Market"
+  },
+  {
+    "column_name": "Scheduled_Soft_Open_Date",
+    "data_type": "DATE",
+    "description": "Planned Soft Open Date"
+  },
+  {
+    "column_name": "Warehouse_Assignment",
+    "data_type": "STRING",
+    "description": "Warehouse Assignment to the DC"
+  }
+]
 
 const table_description="List of Airports";
 const table_name="list_airports";
