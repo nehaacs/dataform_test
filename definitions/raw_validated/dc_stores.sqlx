@@ -2,5 +2,5 @@ config{
     type:"declaration",
     database:`${constants.cdf_data_extraction}`,
     schema:"neha_dataform",
-    name:`${docs.nd_list_airports_config.table_name}`
+    name:`${docs.nd_dc_stores_config.table_name}`
 }
