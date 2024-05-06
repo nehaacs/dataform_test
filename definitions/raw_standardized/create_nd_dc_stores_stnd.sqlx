@@ -8,7 +8,7 @@ config {
 }
 
 js {
-    const table_schema = docs.nd_list_airports_config.schema
+    const table_schema = docs.nd_dc_stores_config.schema
 }
 
 WITH
@@ -20,4 +20,4 @@ WITH
 SELECT
   ${helpers.to_bq(table_schema)}
 FROM
-   dc_stores_stnd ORDER BY ID
+   dc_stores_stnd
