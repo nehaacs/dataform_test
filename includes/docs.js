@@ -1,4 +1,4 @@
-const nd_dc_store_stndrd = require("includes/table_configs/raw_standardized/nd_dc_store_stndrderp_stn_dc_stores_config.js");
+const nd_dc_store_stndrd = require("includes/table_configs/raw_standardized/erp_stn_dc_stores_config.js");
 const helpers = require("includes/helpers.js");
 
 const nd_dc_stores_config = {

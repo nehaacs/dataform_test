@@ -18,4 +18,13 @@ function to_bq(schema){
     return column_list
 }
 
-module.exports={convertLabeltoString,tableDescriptiontoObject,to_bq};
+function to_schema(table){
+    const output = [];
+    for (const item of table) {
+        const { name, type, description } = item;
+        output.push({ column_name:name, data_type:type, description });
+    }
+    return JSON.stringify(output,null,2);
+}
+
+module.exports={convertLabeltoString,tableDescriptiontoObject,to_bq,to_schema};
