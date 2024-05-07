@@ -1,4 +1,4 @@
-config{
+config {
     type:"declaration",
     database:`${constants.cdf_data_extraction}`,
     schema:"neha_dataform",

@@ -2,7 +2,7 @@ config {
     type: "table",
     database: `${constants.cdf_data_extraction}`,
     schema: "neha_dataform",
-    name: "texas_dc_stores_network",
+    name: "texas_dc_stores_network_test",
     tags: ['dc','stores','texas','supply_chain']
 }
 
@@ -10,5 +10,5 @@ js {
     const table_schema = docs.nd_dc_stores_config.schema
 }
 
-SELECT ${helpers.to_bq(table_schema)} from ${ref("dc_stores_stnd")}
+SELECT ${helpers.to_bq(table_schema)} from ${ref("dc_stores_stnd_test")}
 where State="Texas"

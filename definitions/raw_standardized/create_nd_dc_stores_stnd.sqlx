@@ -2,8 +2,8 @@ config {
     type: "table",
     database: `${constants.cdf_data_extraction}`,
     schema: "neha_dataform",
-    name: "dc_stores_stnd",
-    tags: ['dc_stores_stnd'],
+    name: "dc_stores_stnd_test",
+    tags: ['dc_stores_stnd_test'],
     description: docs.nd_dc_stores_config.description,
 }
 
@@ -12,7 +12,7 @@ js {
 }
 
 WITH
-  dc_stores_stnd AS (
+  dc_stores_stnd_test AS (
   SELECT
     ${helpers.to_bq(table_schema)}
   FROM
@@ -20,4 +20,4 @@ WITH
 SELECT
   ${helpers.to_bq(table_schema)}
 FROM
-   dc_stores_stnd
+   dc_stores_stnd_test
